@@ -101,6 +101,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 				<pod name="Fabric" spec="1.10.2"/>
 				<pod name="FirebaseCore " spec="6.23.0"/>
 				<pod name="FirebaseAnalytics" spec="6.23.0"/>
+				<pod name="FirebaseInstanceID" spec="6.23.0"/>
 				<pod name="FirebaseAuth" spec="6.23.0"/>
 				<pod name="FirebaseMessaging" spec="6.23.0"/>
 				<pod name="Firebase/Performance" spec="6.23.0"/>
