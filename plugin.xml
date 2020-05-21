@@ -92,7 +92,6 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<podspec>
         	<config>
             	<source url="https://github.com/CocoaPods/Specs.git"/>
-				<source url="https://github.com/firebase/firebase-ios-sdk.git"/>
         	</config>
          	<pods use-frameworks="true">
              	<pod name="Crashlytics" spec="3.14.0" />
