@@ -2,7 +2,7 @@
 #import <Cordova/CDV.h>
 #import "AppDelegate.h"
 @import FirebaseCore
-@import Fabric
+@import <Fabric/Fabric.h>
 @import Crashlytics
 @import FirebaseInstanceID;
 @import FirebaseMessaging;
