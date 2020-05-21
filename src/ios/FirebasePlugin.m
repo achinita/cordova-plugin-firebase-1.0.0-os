@@ -1,8 +1,8 @@
 #import "FirebasePlugin.h"
 #import <Cordova/CDV.h>
 #import "AppDelegate.h"
-#import "Firebase.h"
-@import <Fabric/Fabric.h>
+@import FirebaseCore
+@import Fabric
 @import Crashlytics
 @import FirebaseInstanceID;
 @import FirebaseMessaging;
