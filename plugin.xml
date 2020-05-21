@@ -90,25 +90,23 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<source-file src="src/ios/FirebasePlugin.m" />
 
 		<header-file src="src/ios/Firebase/Firebase.h" />
-
-		<framework custom="true" src="src/ios/Crashlytics/Crashlytics.framework" />
-		<framework custom="true" src="src/ios/Crashlytics/Fabric.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleAppMeasurement.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/MeasurementNanoPB.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCore.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseAnalytics.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleUtilities.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/nanopb.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseInstanceID.framework" />
-		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/GTMSessionFetcher.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/FirebaseAuth.framework" />
-		<framework custom="true" src="src/ios/Firebase/Messaging/FirebaseMessaging.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/Protobuf.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework" />
+		
+		<podspec>
+        	<config>
+            	<source url="https://github.com/CocoaPods/Specs.git"/>
+				<source url="https://github.com/firebase/firebase-ios-sdk.git"/>
+        	</config>
+         	<pods use-frameworks="true">
+             	<pod name="Crashlytics" spec="3.14.0" />
+				<pod name="Fabric" spec="1.10.2"/>
+				<pod name="FirebaseCore " spec="6.23.0"/>
+				<pod name="FirebaseAnalytics" spec="6.23.0"/>
+				<pod name="FirebaseAuth" spec="6.23.0"/>
+				<pod name="FirebaseMessaging" spec="6.23.0"/>
+				<pod name="Firebase/Performance" spec="6.23.0"/>
+				<pod name="FirebaseRemoteConfig" spec="6.23.0"/>
+         	</pods>
+    	</podspec>
 	</platform>
 
 	<platform name="browser">
